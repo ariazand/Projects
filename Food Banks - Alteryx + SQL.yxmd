@@ -1,0 +1,1986 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="4" y="233" width="1156" height="473" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fact</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fact</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="30" y="413" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File />
+              <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+                <Query>select `fi_dw`.`foodbank_dim`.`FoodBankKey`,
+	`fi_dw`.`foodbank_dim`.`Year`,
+	`fi_dw`.`foodbank_dim`.`fips_id_FB`,
+	`fi_dw`.`foodbank_dim`.`Month` 
+from `fi_dw`.`foodbank_dim`</Query>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <Table />
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Query=select `fi_dw`.`foodbank_dim...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FoodBankKey" source="File: select `fi_dw`.`foodbank_dim`.`FoodBankKey`,&#xA;	`fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`Month` &#xA;from `fi_dw`.`foodbank_dim`" type="Int32" />
+                <Field name="Year" size="254" source="File: select `fi_dw`.`foodbank_dim`.`FoodBankKey`,&#xA;	`fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`Month` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+                <Field name="fips_id_FB" size="254" source="File: select `fi_dw`.`foodbank_dim`.`FoodBankKey`,&#xA;	`fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`Month` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+                <Field name="Month" size="254" source="File: select `fi_dw`.`foodbank_dim`.`FoodBankKey`,&#xA;	`fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`Month` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="378" y="413" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File />
+              <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+                <Query>select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,
+	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,
+	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,
+	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,
+	`fi_dw`.`virginiaincome_dim`.`Year` 
+from `fi_dw`.`virginiaincome_dim`</Query>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <Table />
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Query=select `fi_dw`.`virginiainco...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="IncomeKey" source="File: select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,&#xA;	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,&#xA;	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Year` &#xA;from `fi_dw`.`virginiaincome_dim`" type="Int32" />
+                <Field name="Median Household Income Overall" source="File: select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,&#xA;	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,&#xA;	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Year` &#xA;from `fi_dw`.`virginiaincome_dim`" type="Int64" />
+                <Field name="fips_id_vi" size="254" source="File: select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,&#xA;	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,&#xA;	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Year` &#xA;from `fi_dw`.`virginiaincome_dim`" type="V_WString" />
+                <Field name="VirginiaIncomeName" size="16777216" source="File: select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,&#xA;	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,&#xA;	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Year` &#xA;from `fi_dw`.`virginiaincome_dim`" type="V_WString" />
+                <Field name="Year" source="File: select `fi_dw`.`virginiaincome_dim`.`IncomeKey`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Median Household Income Overall`,&#xA;	`fi_dw`.`virginiaincome_dim`.`fips_id_vi`,&#xA;	`fi_dw`.`virginiaincome_dim`.`VirginiaIncomeName`,&#xA;	`fi_dw`.`virginiaincome_dim`.`Year` &#xA;from `fi_dw`.`virginiaincome_dim`" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="414" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FiBS_ID_FI" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="fips_id_FB" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="186" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File />
+              <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+                <Query>select `fi_dw`.`foodinsecurity_dim`.`FoodInsecurityKey`,
+	`fi_dw`.`foodinsecurity_dim`.`FiBS_ID_FI` 
+from `fi_dw`.`foodinsecurity_dim`</Query>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <Table />
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Query=select `fi_dw`.`foodinsecuri...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FoodInsecurityKey" source="File: select `fi_dw`.`foodinsecurity_dim`.`FoodInsecurityKey`,&#xA;	`fi_dw`.`foodinsecurity_dim`.`FiBS_ID_FI` &#xA;from `fi_dw`.`foodinsecurity_dim`" type="Int32" />
+                <Field name="FiBS_ID_FI" size="254" source="File: select `fi_dw`.`foodinsecurity_dim`.`FoodInsecurityKey`,&#xA;	`fi_dw`.`foodinsecurity_dim`.`FiBS_ID_FI` &#xA;from `fi_dw`.`foodinsecurity_dim`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="845" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FoodInsecurityKey" selected="True" />
+                <SelectField field="FoodBankKey" selected="True" />
+                <SelectField field="CalendarKey" selected="True" />
+                <SelectField field="IncomeKey" selected="True" />
+                <SelectField field="AvgMonthlyMedianIncome" selected="True" />
+                <SelectField field="AverageMedianCountyIncome" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="29" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File />
+              <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+                <Query>select `fi_dw`.`calendar_dim`.`CalendarKey`,
+	`fi_dw`.`calendar_dim`.`Year`,
+	`fi_dw`.`calendar_dim`.`Month`,
+	`fi_dw`.`calendar_dim`.`Quarter` 
+from `fi_dw`.`calendar_dim`</Query>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <Table />
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Query=select `fi_dw`.`calendar_dim...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CalendarKey" source="File: select `fi_dw`.`calendar_dim`.`CalendarKey`,&#xA;	`fi_dw`.`calendar_dim`.`Year`,&#xA;	`fi_dw`.`calendar_dim`.`Month`,&#xA;	`fi_dw`.`calendar_dim`.`Quarter` &#xA;from `fi_dw`.`calendar_dim`" type="Int32" />
+                <Field name="Year" size="254" source="File: select `fi_dw`.`calendar_dim`.`CalendarKey`,&#xA;	`fi_dw`.`calendar_dim`.`Year`,&#xA;	`fi_dw`.`calendar_dim`.`Month`,&#xA;	`fi_dw`.`calendar_dim`.`Quarter` &#xA;from `fi_dw`.`calendar_dim`" type="V_WString" />
+                <Field name="Month" size="254" source="File: select `fi_dw`.`calendar_dim`.`CalendarKey`,&#xA;	`fi_dw`.`calendar_dim`.`Year`,&#xA;	`fi_dw`.`calendar_dim`.`Month`,&#xA;	`fi_dw`.`calendar_dim`.`Quarter` &#xA;from `fi_dw`.`calendar_dim`" type="V_WString" />
+                <Field name="Quarter" size="16777216" source="File: select `fi_dw`.`calendar_dim`.`CalendarKey`,&#xA;	`fi_dw`.`calendar_dim`.`Year`,&#xA;	`fi_dw`.`calendar_dim`.`Month`,&#xA;	`fi_dw`.`calendar_dim`.`Quarter` &#xA;from `fi_dw`.`calendar_dim`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="221" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Year" />
+                <Field field="Month" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Year" />
+                <Field field="Month" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FoodBankKey" selected="True" input="Left_" />
+                    <SelectField field="Left_Year" selected="True" input="Left_" />
+                    <SelectField field="Left_fips_id_FB" selected="True" input="Left_" />
+                    <SelectField field="Left_Month" selected="True" input="Left_" />
+                    <SelectField field="Right_CalendarKey" selected="True" input="Right_" />
+                    <SelectField field="Right_Year" selected="False" rename="Right_Year" input="Right_" />
+                    <SelectField field="Right_Month" selected="False" rename="Right_Month" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="318" y="353" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FoodBankKey" selected="True" />
+                <SelectField field="fips_id_FB" selected="True" />
+                <SelectField field="CalendarKey" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="942" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>CrisisKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="558" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Sum_Median Household Income Overall]/12&#xA;" field="AvgMonthlyMedianIncome" size="19.2" type="FixedDecimal" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[AvgMonthlyMedianIncome = [Sum_Median Household Income Overall]/12
+
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="462" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="VirginiaIncomeName" action="GroupBy" rename="VirginiaIncomeName" />
+                <SummarizeField field="Median Household Income Overall" action="Sum" rename="Sum_Median Household Income Overall" />
+                <SummarizeField field="fips_id_vi" action="GroupBy" rename="fips_id_vi" />
+                <SummarizeField field="IncomeKey" action="GroupBy" rename="IncomeKey" />
+                <SummarizeField field="VirginiaIncomeName" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="653" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FiBS_ID_FI" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="fips_id_vi" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FoodInsecurityKey" selected="True" input="Left_" />
+                    <SelectField field="Left_FiBS_ID_FI" selected="True" input="Left_" />
+                    <SelectField field="Left_FoodBankKey" selected="True" input="Left_" />
+                    <SelectField field="Left_CalendarKey" selected="True" input="Left_" />
+                    <SelectField field="Right_IncomeKey" selected="True" input="Right_" />
+                    <SelectField field="Right_AvgMonthlyMedianIncome" selected="True" input="Right_" />
+                    <SelectField field="Right_AverageMedianCountyIncome" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="749" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FiBS_ID_FI" />
+                <Field field="CalendarKey" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1038" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>crisis_fact</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Create</OutputOption>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <PostSQL>ALTER TABLE `fi_dw`.`crisis_fact` 
+CHANGE COLUMN `CrisisKey` `CrisisKey` INT NOT NULL ,
+ADD INDEX `CalendarKey_idx` (`CalendarKey` ASC) VISIBLE,
+ADD INDEX `FoodInsecurityKey_idx` (`FoodInsecurityKey` ASC) VISIBLE,
+ADD INDEX `FoodBankKey_idx` (`FoodBankKey` ASC) VISIBLE,
+ADD INDEX `IncomeKey_idx` (`IncomeKey` ASC) VISIBLE,
+ADD PRIMARY KEY (`CrisisKey`);
+;
+ALTER TABLE `fi_dw`.`crisis_fact` 
+ADD CONSTRAINT `CalendarKey`
+  FOREIGN KEY (`CalendarKey`)
+  REFERENCES `fi_dw`.`calendar_dim` (`CalendarKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `FoodInsecurityKey`
+  FOREIGN KEY (`FoodInsecurityKey`)
+  REFERENCES `fi_dw`.`foodinsecurity_dim` (`FoodInsecurityKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `FoodBankKey`
+  FOREIGN KEY (`FoodBankKey`)
+  REFERENCES `fi_dw`.`foodbank_dim` (`FoodBankKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `IncomeKey`
+  FOREIGN KEY (`IncomeKey`)
+  REFERENCES `fi_dw`.`virginiaincome_dim` (`IncomeKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;</PostSQL>
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL>use fi_dw;
+drop table if exists crisis_fact;</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Table=crisis_fact</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1050" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\nhele\Desktop\W&amp;M\DM\project\factoutput.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>factoutput.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="5" y="125" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>FoodBank</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>FoodBank</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="29" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>foodbank.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Year" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Month" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="FIPS" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Locality" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Households Served" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Individuals Served" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Pounds of Food Distributed" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Children Served via non-federal child nutrition programs" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Pounds of food distributed via non-federal child nutrition progr" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="LAT" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="LON" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="MTW Status" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+                <Field name="Geopoint" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodbank.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="137" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="Locality" selected="True" rename="CountyLocality" />
+                <SelectField field="Households Served" selected="True" rename="HouseholdServed" type="Int64" size="8" />
+                <SelectField field="Individuals Served" selected="True" rename="IndividualsServed" type="Int64" size="8" />
+                <SelectField field="Pounds of Food Distributed" selected="True" rename="PoundsofFood" type="FixedDecimal" size="254.0" />
+                <SelectField field="Children Served via non-federal child nutrition programs" selected="True" rename="NonfedChildrenServed" type="Int64" size="8" />
+                <SelectField field="Pounds of food distributed via non-federal child nutrition progr" selected="True" rename="NonfedPoundsofFood" type="Int64" size="8" />
+                <SelectField field="LAT" selected="True" />
+                <SelectField field="LON" selected="True" />
+                <SelectField field="Geopoint" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="618" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>FoodBankKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="234" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Month</InputFieldName>
+              <Language>English</Language>
+              <Format>Month</Format>
+              <OutputFieldName>MonthNew</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Month From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="330" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Year" order="Descending" />
+                <Field field="MonthNew" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Year - Descending
+MonthNew - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="425" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="CountyLocality" selected="True" />
+                <SelectField field="HouseholdServed" selected="True" />
+                <SelectField field="IndividualsServed" selected="True" />
+                <SelectField field="PoundsofFood" selected="True" type="Float" size="4" />
+                <SelectField field="NonfedChildrenServed" selected="True" />
+                <SelectField field="NonfedPoundsofFood" selected="True" />
+                <SelectField field="LAT" selected="True" />
+                <SelectField field="LON" selected="True" />
+                <SelectField field="Geopoint" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="809" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>foodbank_dim</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Create</OutputOption>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <PostSQL>ALTER TABLE `fi_dw`.`foodbank_dim` 
+CHANGE COLUMN `FoodBankKey` `FoodBankKey` INT NOT NULL ,
+ADD PRIMARY KEY (`FoodBankKey`);
+;</PostSQL>
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL>use fi_dw;
+drop table if exists foodbank_dim;</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Table=foodbank_dim</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="522" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Uppercase([CountyLocality])" field="CountyUpper" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[CountyUpper = Uppercase([CountyLocality])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="713" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIPS" selected="True" rename="fips_id_FB" />
+                <SelectField field="CountyLocality" selected="False" />
+                <SelectField field="CountyUpper" selected="True" rename="CountyName" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="6" y="162" width="165" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>VirginiaIncome</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>VirginiaIncome</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="30" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>virginiaincome.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="year" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="county" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013A_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013B_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013C_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013D_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013E_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013F_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013G_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013H_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="B19013I_001E" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+                <Field name="county 1" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\virginiaincome.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="126" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="year" selected="True" rename="Year" />
+                <SelectField field="county" selected="True" rename="County" />
+                <SelectField field="B19013_001E" selected="True" rename="Median Household Income Overall" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="210" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>County</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>County</RootName>
+              <Delimeters value="," />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="306" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Year</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yy hh:mm:ss</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Year From:
+MM/dd/yy hh:mm:ss</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="389" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([DateTime_Out],&quot;%Y&quot;)" field="OnlyYear" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[OnlyYear = DateTimeFormat([DateTime_Out],"%Y")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="486" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Median Household Income Overall" selected="True" />
+                <SelectField field="County1" selected="True" rename="VirginiaCounty" />
+                <SelectField field="OnlyYear" selected="True" rename="Year" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="822" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="VirginiaIncomeName" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>VirginiaIncomeName - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="906" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>IncomeKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="989" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>virginiaincome_dim</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Create</OutputOption>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <PostSQL>ALTER TABLE `fi_dw`.`virginiaincome_dim` 
+CHANGE COLUMN `IncomeKey` `IncomeKey` INT NOT NULL ,
+ADD PRIMARY KEY (`IncomeKey`);
+;</PostSQL>
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL>use fi_dw;
+drop table if exists virginiaincome_dim;</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Table=virginiaincome_dim</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="425" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>fips-codes-virginia.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="State Abbreviation" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="State FIPS Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="County FIPS Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="FIPS Entity Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="ANSI Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="GU Name" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="Entity Description" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="510" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[GU Name]+&quot; &quot;+[Entity Description]" field="newname" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="Uppercase([newname])" field="newupperfips" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>newname = [GU Name]+" "+[Entity Description]
+newupperfips = Uppercase([newname])...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="582" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Uppercase([VirginiaCounty])" field="newuppervirginia" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[newuppervirginia = Uppercase([VirginiaCounty])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="654" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="newuppervirginia" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="newupperfips" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="738" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Median Household Income Overall" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="newuppervirginia" selected="True" rename="VirginiaIncomeName" />
+                <SelectField field="County FIPS Code" selected="True" rename="fips_id_vi" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="6" y="198" width="163" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>FoodInsecurity</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>FoodInsecurity</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="29" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>foodinsecurity.xlsx
+Query=`food_insecurity_2021_202402...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Shape__Area" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="Double" />
+                <Field name="the_geom" size="19026" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="V_String" />
+                <Field name="OBJECTID" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="Double" />
+                <Field name="County_Name" size="255" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="V_String" />
+                <Field name="Percent_Food_Insecure_People" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="Double" />
+                <Field name="Shape__Length" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\foodinsecurity.xlsx|||`food_insecurity_2021_20240206$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="534" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Percent_Food_Insecure_People" selected="True" />
+                <SelectField field="County FIPS Code" selected="True" rename="FiBS_ID_FI" />
+                <SelectField field="Fips_nameUpper" selected="True" rename="County_Name" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="630" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="County_Name" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>County_Name - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="726" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>FoodInsecurityKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="822" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>foodinsecurity_dim</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Create</OutputOption>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <PostSQL>ALTER TABLE `fi_dw`.`foodinsecurity_dim` 
+CHANGE COLUMN `FoodInsecurityKey` `FoodInsecurityKey` INT NOT NULL ,
+ADD PRIMARY KEY (`FoodInsecurityKey`);
+;</PostSQL>
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL><![CDATA[use fi_dw;
+drop table if exists foodinsecurity_dim; ]]></PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Table=foodinsecurity_dim</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="42" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>fips-codes-virginia.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="State Abbreviation" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="State FIPS Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="County FIPS Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="FIPS Entity Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="ANSI Code" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="GU Name" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+                <Field name="Entity Description" size="254" source="File: C:\Users\nhele\Desktop\W&amp;M\DM\project\fips-codes-virginia.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="438" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="In_UpperName" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Fips_nameUpper" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="150" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County FIPS Code" selected="True" />
+                <SelectField field="GU Name" selected="True" />
+                <SelectField field="Entity Description" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County_Name" selected="True" />
+                <SelectField field="Percent_Food_Insecure_People" selected="True" />
+                <SelectField field="County_Name1" selected="True" />
+                <SelectField field="County_Name2" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="246" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[GU Name]+' '+[Entity Description]" field="NewNames" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="Uppercase([NewNames])" field="Fips_nameUpper" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>NewNames = [GU Name]+' '+[Entity Description]
+Fips_nameUpper = Uppercase([NewNam...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="342" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Uppercase([County_Name])" field="In_UpperName" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[In_UpperName = Uppercase([County_Name])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="6" y="90" width="130" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Calendar</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calendar</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="30" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File />
+              <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+                <Query>select `fi_dw`.`foodbank_dim`.`Year`,
+	`fi_dw`.`foodbank_dim`.`Month`,
+	`fi_dw`.`foodbank_dim`.`fips_id_FB`,
+	`fi_dw`.`foodbank_dim`.`CountyName` 
+from `fi_dw`.`foodbank_dim`</Query>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <Table />
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Query=select `fi_dw`.`foodbank_dim...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Year" size="254" source="File: select `fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`Month`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`CountyName` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+                <Field name="Month" size="254" source="File: select `fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`Month`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`CountyName` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+                <Field name="fips_id_FB" size="254" source="File: select `fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`Month`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`CountyName` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+                <Field name="CountyName" size="16777216" source="File: select `fi_dw`.`foodbank_dim`.`Year`,&#xA;	`fi_dw`.`foodbank_dim`.`Month`,&#xA;	`fi_dw`.`foodbank_dim`.`fips_id_FB`,&#xA;	`fi_dw`.`foodbank_dim`.`CountyName` &#xA;from `fi_dw`.`foodbank_dim`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="414" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'Q'+&#xA;IIF(Substring([Month_new],5,2) IN ('01','02','03'),'1',&#xA;IIF(Substring([Month_new],5,2) IN ('04','05','06'),'2',&#xA;IIF(Substring([Month_new],5,2) IN ('07','08','09'),'3',&#xA;IIF(Substring([Month_new],5,2) IN ('10','11','12'),'4',&#xA;Null()&#xA;)))) " field="Quarter" size="2147483647" type="V_String" enabled="true" />
+                <FormulaField expression="DateTimeFormat([Month_new],&quot;%B&quot;)" field="Month" size="254" type="V_WString" enabled="true" />
+                <FormulaField expression="DateTimeFormat([Year_new],&quot;%Y&quot;)" field="Year" size="254" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Quarter = 'Q'+
+IIF(Substring([Month_new],5,2) IN ('01','02','03'),'1',
+IIF(Subst...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="126" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Year</InputFieldName>
+              <Language>English</Language>
+              <Format>yyyy</Format>
+              <OutputFieldName>Year_new</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Year From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="222" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Month</InputFieldName>
+              <Language>English</Language>
+              <Format>Month</Format>
+              <OutputFieldName>Month_new</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Month From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="486" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Quarter" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="318" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Year" selected="False" />
+                <SelectField field="Month" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="678" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>CalendarKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="774" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>calendar_dim</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Create</OutputOption>
+                <Connection DcmType="ConnectionId">c6e746e1-5d9c-477c-857e-537d443ac9f3</Connection>
+                <PostSQL>ALTER TABLE `fi_dw`.`calendar_dim` 
+CHANGE COLUMN `CalendarKey` `CalendarKey` INT NOT NULL ,
+ADD PRIMARY KEY (`CalendarKey`);
+;</PostSQL>
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL>use fi_dw;
+drop table if exists calendar_dim;</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:mysql — mysql
+Table=calendar_dim</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="582" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Quarter" />
+                <Field field="Month" />
+                <Field field="Year" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="75" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Join" />
+      <Destination ToolID="87" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="87" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="45" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="45" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Join" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Join" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Unique" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Join" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="56" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="56" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Unique" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>fi-flow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a4043470-84db-45b3-94e7-09f0d764aab9" />
+      <Telemetry>
+        <PreviousWorkflowId value="f36ac81f-a4a8-49bc-9edb-d58505797372" />
+        <OriginWorkflowId value="f36ac81f-a4a8-49bc-9edb-d58505797372" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
