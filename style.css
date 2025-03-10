@@ -30,6 +30,40 @@ header p {
     padding: 20px;
     margin-bottom: 40px;
 }
+/* About Me Section */
+.about-me {
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-bottom: 40px;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-me-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #007BFF;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+}
 
 .projects h2 {
     font-size: 2rem;
