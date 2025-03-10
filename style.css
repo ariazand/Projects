@@ -28,11 +28,21 @@ header p {
 
 .projects {
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.statistical-models {
+    background-color: #f0f8ff;
+}
+
+.alteryx-sql {
+    background-color: #f8f9fa;
 }
 
 .project {
@@ -62,6 +72,7 @@ header p {
 .project a:hover {
     background-color: #218838;
 }
+
 
 footer {
     text-align: center;
